@@ -1,0 +1,51 @@
+# --------------------------
+# Node-related
+# --------------------------
+node_modules/
+npm-debug.log
+pnpm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# --------------------------
+# Vite build output
+# --------------------------
+dist/
+build/
+.vite/
+
+# If you generate source maps in production, you might also ignore *.map files:
+# *.map
+
+# --------------------------
+# Environment files
+# (Comment out or remove if you want to commit these)
+# --------------------------
+.env
+.env.*  # e.g., .env.local, .env.development, .env.production
+
+# --------------------------
+# IntelliJ IDEA / JetBrains
+# --------------------------
+# Project configuration
+.idea/
+*.iml
+
+# IntelliJ “out” directory
+out/
+
+# --------------------------
+# OS / Editor junk
+# --------------------------
+.DS_Store
+Thumbs.db
+
+# --------------------------
+# Test coverage
+# --------------------------
+coverage/
+
+# --------------------------
+# Optional logs or temporary
+# --------------------------
+*.log
