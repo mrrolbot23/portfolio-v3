@@ -9,10 +9,5 @@
       "vitest/globals",
       "@testing-library/jest-dom"
     ]
-  },
-  "include": [
-    "src",
-    "vitest.config.ts",
-    "vite.config.ts"
-  ]
+  }
 }
