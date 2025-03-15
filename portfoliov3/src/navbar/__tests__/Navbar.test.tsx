@@ -2,7 +2,7 @@
 import React from 'react';
 import {describe, expect, it} from "vitest";
 import {render, screen} from "@testing-library/react";
-import {Navbar} from "../Navbar";
+import Navbar from "../Navbar";
 
 describe('Navbar', () => {
     beforeEach(() => {
@@ -14,26 +14,26 @@ describe('Navbar', () => {
     });
 
     it('should display logo', () => {
-        expect(screen.getByLabelText("brand-logo")).toBeVisible();
+        expect(screen.getByAltText("Brand Logo")).toBeVisible();
     });
 
     it('should display home button', () => {
-        expect(screen.getByRole("button", {name: "home-button"})).toBeVisible();
+        expect(screen.getByRole("button", {name: "Home-button"})).toBeVisible();
     });
 
     it('should display about me button', () => {
-        expect(screen.getByRole("button", {name: "about-me"})).toBeVisible();
+        expect(screen.getByRole("button", {name: "About Me-button"})).toBeVisible();
     });
 
-    it('should display home button', () => {
-        expect(screen.getByRole("button", {name: "work-button"})).toBeVisible();
+    it('should display work button', () => {
+        expect(screen.getByRole("button", {name: "Work-button"})).toBeVisible();
     });
 
-    it('should display home button', () => {
-        expect(screen.getByRole("button", {name: "cve-button"})).toBeVisible();
+    it('should display cve button', () => {
+        expect(screen.getByRole("button", {name: "CVE-button"})).toBeVisible();
     });
 
-    it('should display home button', () => {
-        expect(screen.getByRole("button", {name: "contact-button"})).toBeVisible();
+    it('should display contact button', () => {
+        expect(screen.getByRole("button", {name: "Let's Talk-button"})).toBeVisible();
     });
 });
