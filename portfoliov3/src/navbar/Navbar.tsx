@@ -28,22 +28,25 @@ function Navbar() {
     return (
         <AppBar position="static" color={"transparent"} elevation={0} aria-label={"navbar"}>
             <Container maxWidth="xl">
-                <Toolbar disableGutters sx={{justifyContent: "space-between"}} >
+                <Toolbar disableGutters sx={{justifyContent: "space-between"}}>
                     <Typography
                         variant="h6"
                         noWrap
                         component="a"
                         sx={{
-                            margin: 0,
+                            mt: 1,
                             display: {xs: 'none', md: 'flex'},
                             fontFamily: 'monospace',
                             fontWeight: 700,
                             letterSpacing: '.3rem',
                             color: 'inherit',
                             textDecoration: 'none',
+                            cursor: "pointer"
                         }}
                     >
-                        <img src={logo} width={50} alt={"Brand Logo"}/>
+                        <NavLink to={"/"}>
+                            <img src={logo} width={50} alt={"Brand Logo"}/>
+                        </NavLink>
                     </Typography>
 
                     <Box sx={{flexGrow: 1, display: {xs: 'flex', md: 'none'}}}>
@@ -104,9 +107,9 @@ function Navbar() {
                                 onClick={handleCloseNavMenu}
                                 sx={{color: "inherit", fontWeight: "bold"}}
                                 size={"large"}
-                                aria-label={page+"-button"}
+                                aria-label={page + "-button"}
                             >
-                                <NavLink to={"/"+page} style={{textDecoration: "none"}} >{page}</NavLink>
+                                <NavLink to={"/" + page} style={{textDecoration: "none"}}>{page}</NavLink>
                             </Button>
                         ))}
                     </Box>

@@ -10,7 +10,7 @@ const recentProjects: RecentProject[] = [
     },
     {
         name: "Soldier Solutions",
-        description: "The official platform of the Army Software Factory (ASF), where Soldiers and units can submit challenges, explore custom-built software solutions, and collaborate on Army technology initiatives.",
+        description: "The official platform of the Army Software Factory, where Soldiers and units can submit challenges, explore custom-built software solutions, and collaborate on Army technology initiatives.",
         image: "src/assets/soldier-solutions.png",
         gitHub: "",
         liveDemo: "https://soldiersolutions.swf.army.mil/"

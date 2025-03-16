@@ -34,7 +34,7 @@ export const Work = () => {
                                     target={"_blank"}
                                     sx={{fontWeight: "bold", fontSize: "16px"}}
                                 >
-                                    GitHub
+                                    Code
                                 </Button>
                                 <Button
                                     color={"inherit"}
@@ -43,7 +43,7 @@ export const Work = () => {
                                     target={"_blank"}
                                     sx={{fontWeight: "bold", fontSize: "16px"}}
                                 >
-                                    Live Demo
+                                    Live Project
                                 </Button>
                             </CardActions>
                         </Card>
