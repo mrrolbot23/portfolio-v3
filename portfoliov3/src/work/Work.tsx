@@ -9,7 +9,7 @@ import { motion } from "motion/react";
 export const Work = () => {
     return (
         <>
-            <Typography variant={"h3"} textAlign={"center"} fontWeight={"bold"} mt={8}>RECENT WORK</Typography>
+            <Typography variant={"h3"} textAlign={"center"} fontWeight={"bold"} mt={8}>RECENT <span style={{color: "#A31D1D"}}> WORK</span></Typography>
             <Stack alignItems={"center"} mt={5} padding={5} display={"flex"} flexDirection={"row"} flexWrap={"wrap"}
                    justifyContent={"center"} gap={2}>
                 {recentProjects.map((project, index) => {
@@ -24,7 +24,7 @@ export const Work = () => {
                             }}
                         >
 
-                            <Card sx={{maxWidth: 345, height: 500}}>
+                            <Card sx={{maxWidth: 345, height: 500, borderRadius: "15px"}} >
                                 <CardMedia
                                     sx={{height: 240}}
                                     image={project.image}
@@ -49,11 +49,11 @@ export const Work = () => {
                                         Code
                                     </Button>
                                     <Button
-                                        color={"inherit"}
+                                        variant={"outlined"}
                                         size="small"
                                         href={project.liveDemo}
                                         target={"_blank"}
-                                        sx={{fontWeight: "bold", fontSize: "16px"}}
+                                        sx={{ color: "#A31D1D", border: "solid 2px", borderRadius: "15px", fontSize: "16px"}}
                                     >
                                         Live Project
                                     </Button>

@@ -32,9 +32,9 @@ export const About = () => {
                     </Stack>
                     <Stack width={500} textAlign={"center"}>
                         <Typography variant={"h3"} aria-label={"about-me-header"} fontWeight={"bold"} letterSpacing={2}>ABOUT
-                            ME</Typography>
+                            <span style={{color: "#A31D1D"}}> ME</span></Typography>
                         <Typography variant={"body1"} aria-label={"introduction"} padding={2}>
-                            I’m a Software Engineer and Systems Developer in the U.S. Army, specializing in designing
+                            I’m a Software and Systems Engineer and in the U.S. Army, specializing in designing
                             and
                             building secure, scalable applications. With experience across frontend and backend
                             technologies, I thrive in solving complex problems and creating innovative solutions.

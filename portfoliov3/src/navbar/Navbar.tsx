@@ -12,7 +12,7 @@ import MenuItem from '@mui/material/MenuItem';
 import logo from "../assets/ER_logo.png";
 import {NavLink} from "react-router";
 
-const pages = ['Home', 'About', 'Work', 'CVE', "Contact"];
+const pages = ['Home', 'About', 'Work', 'CV', "Contact"];
 
 function Navbar() {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
