@@ -10,8 +10,9 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import logo from "../assets/ER_logo.png";
+import {NavLink} from "react-router";
 
-const pages = ['Home', 'About Me', 'Work', 'CVE', "Let's Talk"];
+const pages = ['Home', 'About', 'Work', 'CVE', "Contact"];
 
 function Navbar() {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -74,7 +75,7 @@ function Navbar() {
                         >
                             {pages.map((page) => (
                                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography sx={{textAlign: 'center', color: "beige"}}>{page}</Typography>
+                                    <Typography sx={{textAlign: 'center', color: "black"}}>{page}</Typography>
                                 </MenuItem>
                             ))}
                         </Menu>
@@ -105,7 +106,7 @@ function Navbar() {
                                 size={"large"}
                                 aria-label={page+"-button"}
                             >
-                                {page}
+                                <NavLink to={"/"+page} style={{textDecoration: "none"}} >{page}</NavLink>
                             </Button>
                         ))}
                     </Box>
